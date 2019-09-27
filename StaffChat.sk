@@ -1,0 +1,6 @@
+on chat:
+    if the first character of message is "##":
+        if player has permission "staffchat.use":
+            replace all "##" in "%message%" with " "
+            cancel event
+            send "&c&lSTAFF &b%message%" to all players where [input has permission "staffchat.use"]
